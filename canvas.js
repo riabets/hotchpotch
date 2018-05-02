@@ -35,3 +35,11 @@ d.fillRect(30, 30, 300, 300);
 d.clearRect(150, 50, 50, 50);
 // Clearing full canvas
 // d.clearRect(0, 0, canvas.width, canvas.height);
+
+var img = new Image();
+img.src = 'https://mdn.mozillademos.org/files/222/Canvas_createpattern.png';
+img.onload = function() {
+    var pattern = d.createPattern(img, 'repeat');
+    d.fillStyle = pattern;
+    d.fillRect(400, 0, 400, 400);
+};
