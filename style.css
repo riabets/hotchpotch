@@ -8,4 +8,6 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
+    background-image:url("grid50.png");
+    background-size:100%;
 }
